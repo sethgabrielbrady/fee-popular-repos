@@ -6,10 +6,11 @@
 
     HeaderController.$inject = ['GithubService'];
     function HeaderController(GithubService) {
-        this.token = GithubService.getUserToken() || '';
+        let vm = this;
+        vm.token = GithubService.getUserToken() || '';
 
-        this.saveToken = function saveToken() {
-            GithubService.setUserToken(this.token);
+        vm.saveToken = function saveToken() {
+            GithubService.setUserToken(vm.token);
         };
     }
 })();

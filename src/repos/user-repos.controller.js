@@ -6,17 +6,17 @@
 
     UserReposController.$inject = ['GithubService'];
     function UserReposController(GithubService) {
-        var vm = this;
+        let vm = this;
         vm.list = [];
         vm.user = {};
 
         vm.lookup = function lookup(user) {
             GithubService.getRepos(user)
-                .then(function setUsers(repos) {
+                .then(function setReposOnScope(repos) {
                     console.log('repos', repos);
                     vm.list = repos;
                 })
-                .catch(function(err) {
+                .catch(function handleErrors(err) {
                     console.error(err);
                 });
         };
