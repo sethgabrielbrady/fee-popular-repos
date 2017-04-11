@@ -10,6 +10,7 @@
       return {
         templateUrl:'repos/repo.template.html',
         restrict: 'E',
+        transclude: true,
         scope: {
           repo: '=',
         },
