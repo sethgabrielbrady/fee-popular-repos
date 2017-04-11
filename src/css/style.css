@@ -3,22 +3,18 @@
     display: inline-block;
 }
 
-
-
 .page-content {
-  display: flex;
-  flex-flow: column;;
-
+    display: flex;
+    flex-flow: column;
+    ;
 }
 
-
-
 .panel-body:hover {
-    background-color: rgb(158, 209, 252);
+    background-color: rgb(180, 230, 255);
     color: #fff;
     cursor: pointer;
 }
 
-.title {
-  font-size:1.5em;
+h3 {
+    font-size: 1.25em;
 }

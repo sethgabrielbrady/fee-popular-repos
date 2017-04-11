@@ -1,20 +1,19 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular.module('gh')
-    .directive('repo', repo);
+    angular.module('gh')
+        .directive('repo', repo);
 
-    function repo(){
+    function repo() {
 
-      return {
-        templateUrl:'repos/repo.template.html',
-        restrict: 'E',
-        scope: {
-            repo: '=',
+        return {
+            templateUrl: 'repos/repo.template.html',
+            restrict: 'E',
+            scope: {
+                repo: '=',
 
-
-        }
-      };
+            }
+        };
 
     }
 

@@ -5,6 +5,7 @@
         .controller('UserReposController', UserReposController);
 
     UserReposController.$inject = ['GithubService'];
+
     function UserReposController(GithubService) {
         let vm = this;
         vm.list = [];

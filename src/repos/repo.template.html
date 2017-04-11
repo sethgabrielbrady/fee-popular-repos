@@ -1,15 +1,17 @@
+<section class='panel panel-default' ng-model="clicked" ng-init="clicked=true">
 
-
-<section class='panel panel-default'>
-
-    <header class ='panel-heading'>
-      <h2>{{repo.name}}</h2>
+    <header class='panel-heading' ng-if="clicked">
+        <h2>{{repo.name}}</h2>
     </header>
     <article class='panel-body'>
-    <aside> <h3 class='title'>Created on:</h3> <p>{{repo.created_at  | date : format : short}}</p>  </aside>
-    <aside>  <h3 class='title'>Created by:</h3> <p>{{repo.owner.login}}</p></aside>
-    <aside>  <h3 class='title'>Last modified:</h3> <p>{{repo.updated_at | date : format : short}}</p></aside>
-    <aside> <h3 class='title'>Clone url:</h3> <p>{{repo.clone_url}}</p></aside>
+        <h3 class='title'>Created on:</h3>
+        <p>{{repo.created_at | date : format : short}}</p>
+        <h3 class='title'>Created by:</h3>
+        <p>{{repo.owner.login}}</p>
+        <h3 class='title'>Last modified:</h3>
+        <p>{{repo.updated_at | date : format : short}}</p>
+        <h3 class='title'>Clone url:</h3>
+        <p>{{repo.clone_url}}</p>
 
     </article>
 
