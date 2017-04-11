@@ -3,7 +3,9 @@
     display: inline-block;
 }
 
-
+.hidden {
+  display: none;
+}
 
 .page-content {
   display: flex;
@@ -11,12 +13,9 @@
 
 }
 
-
-
 .panel-body:hover {
-    background-color: rgb(158, 209, 252);
-    color: #fff;
-    cursor: pointer;
+    border: 2px solid rgb(158, 209, 252);
+
 }
 
 .title {

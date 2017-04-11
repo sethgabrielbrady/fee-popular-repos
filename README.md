@@ -12,3 +12,7 @@ Clone this repo, then run an http server in the `src/` directory. Be sure to typ
 This page requires a valid github id to use and can access information about github users
 based on their username. It uses directives to populate bootstrap panels with data
 pulled from the API.
+
+##Contributors
+
+Jordan Kasper, Seth Brady
