@@ -1,28 +1,28 @@
 (function() {
-  'use strict';
+    'use strict';
 
-  angular.module('gh')
-    .directive('repo', repo);
+    angular.module('gh')
+        .directive('repo', repo);
 
-    function repo(){
-      let $ = angular.element;
+    function repo() {
+        let $ = angular.element;
 
-      return {
-        templateUrl:'repos/repo.template.html',
-        restrict: 'E',
-        transclude: true,
-        scope: {
-          repo: '=',
-        },
-        link: setupCollapse
-      };
+        return {
+            templateUrl: 'repos/repo.template.html',
+            restrict: 'E',
+            transclude: true,
+            scope: {
+                repo: '=',
+            },
+            link: setupCollapse
+        };
 
-      function setupCollapse(scope, element){
-        $(element)
-          .find('header').on('click', function togglePanelBody(){
-            $(element).find('article').toggleClass('hidden');
-          });
-      }
+        function setupCollapse(scope, element) {
+            $(element)
+                .find('header').on('click', function togglePanelBody() {
+                    $(element).find('article').toggleClass('hidden');
+                });
+        }
     }
 
 }());

@@ -5,6 +5,7 @@
         .factory('GithubService', GithubService);
 
     GithubService.$inject = ['$http'];
+
     function GithubService($http) {
         let _token = localStorage.getItem('gh-token') || null;
 

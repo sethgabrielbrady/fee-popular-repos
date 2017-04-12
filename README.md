@@ -9,9 +9,8 @@ Clone this repo, then run an http server in the `src/` directory. Be sure to typ
 
 
 ## About
-This page requires a valid github id to use and can access information about github users
-based on their username. It uses directives to populate bootstrap panels with data
-pulled from the API.
+This page requires a valid github id token to use and can access information about github users
+by username. It uses custom directives and filters to populate bootstrap panels with, sort through, and manipulate the data pulled from the API.
 
 ##Contributors
 

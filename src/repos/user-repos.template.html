@@ -1,4 +1,3 @@
-
 <h2>GitHub Address Book</h2>
 
 <form ng-submit='reposCtrl.lookup(reposCtrl.user.login)'>
@@ -8,4 +7,4 @@
 
 
 
-<repo ng-repeat='repo in reposCtrl.list | popularity' repo='repo'></repo>
+<repo ng-repeat='repo in reposCtrl.list | popularity' repo='repo' ng-transclude></repo>
