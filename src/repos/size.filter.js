@@ -10,7 +10,7 @@
          * Take repo data in as a number and retruns it divided by 1000. I then applies the
          * toFixed method with to determine the length
          * @param  {Number} repo Number data pulled from the repo
-         * @return {Number}      
+         * @return {Number}
          */
         return function doSizeMath(repo) {
 

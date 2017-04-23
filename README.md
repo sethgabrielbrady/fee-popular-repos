@@ -9,8 +9,10 @@ Clone this repo, then run an http server in the `src/` directory. Be sure to typ
 
 
 ## About
-This page requires a valid github id token to use and can access information about github users
-by username. It uses custom directives and filters to populate bootstrap panels with, sort through, and manipulate the data pulled from the API.
+This page requires a valid github id token to use and can access information about github users by username. It uses custom directives and filters to populate bootstrap panels with, sort through, and manipulate the data pulled from the API.
+
+## TO DO
+- [ ] The Popularity info doesn't display the correct number.
 
 ##Contributors
 
